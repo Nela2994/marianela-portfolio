@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Marianela | Virtual Assistant</title>
+
+<style>
+
+body{
+font-family: Arial, sans-serif;
+margin:0;
+background:#f5f7fa;
+color:#333;
+}
+
+header{
+background:#0a2540;
+color:white;
+padding:60px;
+text-align:center;
+}
+
+header h1{
+font-size:40px;
+margin-bottom:10px;
+}
+
+header p{
+font-size:18px;
+}
+
+button{
+padding:12px 25px;
+margin:10px;
+border:none;
+background:#0073e6;
+color:white;
+font-size:16px;
+cursor:pointer;
+border-radius:5px;
+}
+
+section{
+padding:60px;
+max-width:1000px;
+margin:auto;
+}
+
+h2{
+color:#0a2540;
+margin-bottom:20px;
+}
+
+.services{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:20px;
+}
+
+.card{
+background:white;
+padding:25px;
+border-radius:8px;
+box-shadow:0px 3px 10px rgba(0,0,0,0.1);
+}
+
+.portfolio{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:20px;
+}
+
+footer{
+background:#0a2540;
+color:white;
+text-align:center;
+padding:20px;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<header>
+
+<h1>Administrative & Medical Virtual Assistant</h1>
+
+<p>Excel • Inventory Systems • Process Optimization</p>
+
+<p>I help businesses organize operations, manage data, and improve workflows.</p>
+
+<button onclick="scrollToPortfolio()">View Portfolio</button>
+
+</header>
+
+<section>
+
+<h2>About Me</h2>
+
+<p>
+Hi, I'm Marianela. I specialize in administrative support, inventory tracking,
+and data organization. I help businesses stay organized and efficient
+by creating structured systems using Excel and Google Workspace.
+</p>
+
+</section>
+
+<section>
+
+<h2>Services</h2>
+
+<div class="services">
+
+<div class="card">
+<h3>Administrative Support</h3>
+<p>
+Data entry, document management, email handling,
+and operational organization.
+</p>
+</div>
+
+<div class="card">
+<h3>Inventory Management</h3>
+<p>
+Inventory tracking systems, stock control dashboards,
+and supplier management.
+</p>
+</div>
+
+<div class="card">
+<h3>Excel & Google Sheets</h3>
+<p>
+Automated spreadsheets, operational dashboards,
+and data tracking systems.
+</p>
+</div>
+
+</div>
+
+</section>
+
+<section id="portfolio">
+
+<h2>Portfolio Projects</h2>
+
+<div class="portfolio">
+
+<div class="card">
+
+<h3>Smart Inventory & Stock Control System</h3>
+
+<p>
+Inventory system that tracks product movements,
+calculates stock levels, and generates low stock alerts.
+</p>
+
+</div>
+
+<div class="card">
+
+<h3>Medical Administrative System</h3>
+
+<p>
+Administrative workflow system for managing patient
+records, appointments, and medical documentation.
+</p>
+
+</div>
+
+<div class="card">
+
+<h3>Business Operations Tracker</h3>
+
+<p>
+Dashboard that tracks tasks, clients, and payments
+to improve business organization.
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<section>
+
+<h2>Tools & Technology</h2>
+
+<p>
+
+<strong>Google Workspace</strong><br>
+Google Sheets • Google Docs • Google Drive • Google Calendar
+
+<br><br>
+
+<strong>Microsoft Excel</strong><br>
+Dashboards • Data tracking • Inventory systems
+
+<br><br>
+
+<strong>Technical Skills</strong><br>
+HTML • CSS • JavaScript • PHP • MySQL
+
+</p>
+
+</section>
+
+<section>
+
+<h2>Contact</h2>
+
+<p>
+If you need help organizing administrative tasks,
+managing data, or improving operational workflows,
+I would be happy to support your business.
+</p>
+
+<button onclick="contact()">Hire Me</button>
+
+</section>
+
+<footer>
+
+<p>© 2026 Marianela | Virtual Assistant</p>
+
+</footer>
+
+<script>
+
+function scrollToPortfolio(){
+document.getElementById("portfolio").scrollIntoView({behavior:"smooth"});
+}
+
+function contact(){
+window.location.href="https://www.upwork.com/";
+}
+
+</script>
+
+</body>
+</html>
