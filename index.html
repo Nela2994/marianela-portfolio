@@ -2,31 +2,34 @@
 <html lang="es">
 <head>
 <meta charset="UTF-8">
+<!-- Permite que la página se adapte correctamente a pantallas de celulares, tablets y computadoras -->
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Marianela Cardozo | Asistencia Virtual & Operaciones</title>
 
+<!-- SECCIÓN DE ESTILOS CSS (Define el diseño visual, colores, fuentes y tamaños) -->
 <style>
+/* Reset básico: Quita márgenes por defecto y define la tipografía general */
 * { box-sizing: border-box; margin: 0; padding: 0; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
 body { background-color: #ffffff; color: #333333; line-height: 1.6; }
 
-/* Navegación Superior Blanca */
+/* ESTILOS DEL ENCABEZADO Y MENÚ SUPERIOR (Barra blanca fija arriba) */
 header { 
   background: #ffffff; 
   padding: 1.2rem 2rem; 
   display: flex; 
   justify-content: space-between; 
   align-items: center; 
-  position: sticky; 
+  position: sticky; /* Hace que el menú quede fijo al hacer scroll */
   top: 0; 
   z-index: 100;
-  box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+  box-shadow: 0 2px 10px rgba(0,0,0,0.05); /* Sombra suave inferior */
 }
 .logo { color: #4a0e4e; font-weight: 800; font-size: 1.4rem; letter-spacing: 1px; }
-.logo span { color: #ff5e00; }
+.logo span { color: #ff5e00; } /* Color naranja para la palabra CARDOZO */
 nav a { color: #333333; text-decoration: none; margin-left: 1.5rem; font-size: 0.95rem; font-weight: 600; transition: 0.3s; }
-nav a:hover { color: #800080; }
+nav a:hover { color: #800080; } /* Cambia a violeta al pasar el cursor */
 
-/* Hero Banner con Paleta Everon (Púrpura, Fucsia y Naranja) */
+/* ESTILOS DEL HERO BANNER (Sección principal morada con degradado estilo Everon) */
 .hero { 
   background: linear-gradient(135deg, #4a0e4e 0%, #800080 50%, #d10068 100%); 
   color: white; 
@@ -36,9 +39,9 @@ nav a:hover { color: #800080; }
 .hero h1 { font-size: 2.8rem; margin-bottom: 1rem; font-weight: 800; }
 .hero p { font-size: 1.2rem; color: #f8f9fa; max-width: 700px; margin: 0 auto 2rem auto; }
 
-/* Botón Estilo Naranja Gradiente */
+/* ESTILOS DE LOS BOTONES */
 .btn-primary { 
-  background: linear-gradient(90deg, #ff5e00 0%, #ffa600 100%); 
+  background: linear-gradient(90deg, #ff5e00 0%, #ffa600 100%); /* Degradado naranja a amarillo */
   color: white; 
   padding: 0.8rem 1.8rem; 
   border-radius: 25px; 
@@ -49,7 +52,7 @@ nav a:hover { color: #800080; }
   border: none;
   box-shadow: 0 4px 10px rgba(255, 94, 0, 0.3);
 }
-.btn-primary:hover { transform: scale(1.05); }
+.btn-primary:hover { transform: scale(1.05); } /* Efecto de aumento leve al pasar el mouse */
 
 .btn-secondary {
   background-color: transparent;
@@ -65,15 +68,15 @@ nav a:hover { color: #800080; }
 }
 .btn-secondary:hover { background-color: #ffffff; color: #800080; }
 
-/* Secciones generales */
+/* ESTILOS DE SECCIONES GENERALES */
 .section { padding: 4rem 2rem; max-width: 1100px; margin: 0 auto; }
 .section-title { text-align: center; font-size: 2rem; margin-bottom: 2.5rem; color: #4a0e4e; font-weight: 800; }
 
-/* Cuadrículas y Tarjetas con bordes Púrpura/Fucsia */
+/* ESTILOS DE TARJETAS (Servicios y Proyectos) */
 .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1.8rem; }
 .card { 
   background: white; 
-  border: 2px solid #f0e6f2; 
+  border: 2px solid #f0e6f2; /* Borde violeta muy claro */
   border-radius: 16px; 
   padding: 2rem; 
   box-shadow: 0 4px 15px rgba(128, 0, 128, 0.05); 
@@ -82,11 +85,12 @@ nav a:hover { color: #800080; }
   flex-direction: column;
   justify-content: space-between;
 }
+/* Efecto al pasar el cursor por encima de una tarjeta */
 .card:hover { transform: translateY(-5px); border-color: #d10068; box-shadow: 0 10px 20px rgba(209, 0, 104, 0.15); }
 .card h3 { color: #4a0e4e; margin-bottom: 0.8rem; font-size: 1.25rem; }
 .card p { color: #666666; font-size: 0.95rem; margin-bottom: 1.2rem; }
 
-/* Pie de página */
+/* ESTILOS DEL PIE DE PÁGINA (Footer) */
 footer { background: #4a0e4e; color: #ffffff; text-align: center; padding: 2.5rem; font-size: 0.9rem; margin-top: 3rem; }
 footer a { color: #ffa600; text-decoration: none; font-weight: bold; }
 </style>
@@ -94,8 +98,11 @@ footer a { color: #ffa600; text-decoration: none; font-weight: bold; }
 
 <body>
 
+  <!-- ==================== BARRA DE NAVEGACIÓN SUPERIOR ==================== -->
   <header>
+    <!-- Nombre/Logo del sitio -->
     <div class="logo">MARIANELA <span>CARDOZO</span></div>
+    <!-- Menú de enlaces rápidos -->
     <nav>
       <a href="#sobre-mi">Sobre mí</a>
       <a href="#servicios">Servicios</a>
@@ -104,15 +111,18 @@ footer a { color: #ffa600; text-decoration: none; font-weight: bold; }
     </nav>
   </header>
 
+  <!-- ==================== BANNER PRINCIPAL (HERO) ==================== -->
   <section class="hero">
     <h1>Asistencia Virtual & Operaciones</h1>
     <p>Excel Avanzado • Sistemas de Inventario • Optimización de Procesos</p>
     <div>
+      <!-- Botones principales con enlaces a secciones y WhatsApp -->
       <a href="#portfolio" class="btn-primary">Ver Portafolio</a>
-      <a href="mailto:nela_cardozo@hotmail.com?subject=Consulta%20desde%20Portfolio" class="btn-secondary">Contactar</a>
+      <a href="https://wa.me/543624300101?text=Hola%20Marianela,%20vi%20tu%20portfolio%20y%20me%20gustar%C3%ADa%20consultarte%20por%20un%20servicio." target="_blank" class="btn-secondary">Enviar WhatsApp</a>
     </div>
   </section>
 
+  <!-- ==================== SECCIÓN SOBRE MÍ ==================== -->
   <section class="section" id="sobre-mi">
     <h2 class="section-title">Sobre Mí</h2>
     <p style="text-align: center; max-width: 800px; margin: 0 auto; color: #555555; font-size: 1.05rem;">
@@ -120,17 +130,21 @@ footer a { color: #ffa600; text-decoration: none; font-weight: bold; }
     </p>
   </section>
 
+  <!-- ==================== SECCIÓN DE SERVICIOS ==================== -->
   <section class="section" id="servicios">
     <h2 class="section-title">Servicios</h2>
     <div class="grid">
+      <!-- Tarjeta Servicio 1 -->
       <div class="card">
         <h3>Soporte Administrativo & CRM</h3>
         <p>Gestión de datos, administración de documentos, atención a proveedores/clientes e implementación de flujos operativos en plataformas CRM (Pilot, HubSpot).</p>
       </div>
+      <!-- Tarjeta Servicio 2 -->
       <div class="card">
         <h3>Gestión de Inventario & Stock</h3>
         <p>Diseño e implementación de sistemas de control de stock, seguimiento de entradas/salidas, alertas de reposición y gestión de proveedores.</p>
       </div>
+      <!-- Tarjeta Servicio 3 -->
       <div class="card">
         <h3>Análisis de Datos & Excel</h3>
         <p>Planillas automatizadas, tableros de control operativo (Dashboards) y organización de bases de datos relacionales.</p>
@@ -138,9 +152,11 @@ footer a { color: #ffa600; text-decoration: none; font-weight: bold; }
     </div>
   </section>
 
+  <!-- ==================== SECCIÓN DE PROYECTOS ==================== -->
   <section class="section" id="portfolio">
     <h2 class="section-title">Proyectos Destacados</h2>
     <div class="grid">
+      <!-- Proyecto 1: Sistema Python vinculado a tu repositorio de GitHub -->
       <div class="card">
         <div>
           <h3>Sistema de Control de Stock (Python & DB)</h3>
@@ -148,6 +164,7 @@ footer a { color: #ffa600; text-decoration: none; font-weight: bold; }
         </div>
         <a href="https://github.com/nela2994/Trabajo_Integrador_OE" target="_blank" class="btn-primary" style="text-align: center; margin-top: 15px;">Ver Código en GitHub →</a>
       </div>
+      <!-- Proyecto 2: Perfil General / Excel -->
       <div class="card">
         <div>
           <h3>Gestión de Datos & Reportes Administrativos</h3>
@@ -158,13 +175,28 @@ footer a { color: #ffa600; text-decoration: none; font-weight: bold; }
     </div>
   </section>
 
-  <footer id="contacto">
+  <!-- ==================== SECCIÓN DE CONTACTO ==================== -->
+  <section class="section" id="contacto" style="text-align: center;">
+    <h2 class="section-title">Contacto</h2>
+    <p style="margin-bottom: 1.5rem; color: #555555; max-width: 600px; margin-left: auto; margin-right: auto;">
+      ¿Necesitás organizar la administración de tu negocio, automatizar datos o consultar por servicios de soporte operativo? Contactame directamente por WhatsApp.
+    </p>
+    <!-- Botón verde con API directa a tu WhatsApp (+54 362 4300101) -->
+    <a href="https://wa.me/543624300101?text=Hola%20Marianela,%20vi%20tu%20portfolio%20y%20me%20gustar%C3%ADa%20consultarte%20por%20un%20servicio." 
+       target="_blank" 
+       class="btn-primary" 
+       style="background: #25D366; box-shadow: 0 4px 10px rgba(37, 211, 102, 0.3); text-decoration: none; font-size: 1.1rem; padding: 0.9rem 2rem;">
+       💬 Contactar por WhatsApp
+    </a>
+  </section>
+
+  <!-- ==================== PIE DE PÁGINA (FOOTER) ==================== -->
+  <footer>
     <p>© 2026 Marianela Cardozo — Resistencia, Chaco, Argentina</p>
-    <p style="margin-top: 10px;">Email: nela_cardozo@hotmail.com | <a href="mailto:nela_cardozo@hotmail.com?subject=Consulta%20desde%20Portfolio">Enviar mensaje directo</a></p>
+    <p style="margin-top: 10px;">Email: nela_cardozo@hotmail.com | WhatsApp: +54 362 4300101</p>
   </footer>
 
 </body>
 </html>
-
 
 
