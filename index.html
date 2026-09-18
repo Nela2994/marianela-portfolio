@@ -7,11 +7,11 @@
 
 <style>
 * { box-sizing: border-box; margin: 0; padding: 0; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
-body { background-color: #f8f9fa; color: #212529; line-height: 1.6; }
+body { background-color: #ffffff; color: #333333; line-height: 1.6; }
 
-/* Navegación Superior Fija (Estilo Everon) */
+/* Navegación Superior Blanca */
 header { 
-  background: #0f172a; 
+  background: #ffffff; 
   padding: 1.2rem 2rem; 
   display: flex; 
   justify-content: space-between; 
@@ -19,75 +19,76 @@ header {
   position: sticky; 
   top: 0; 
   z-index: 100;
-  box-shadow: 0 2px 10px rgba(0,0,0,0.3);
+  box-shadow: 0 2px 10px rgba(0,0,0,0.05);
 }
-.logo { color: #fff; font-weight: 700; font-size: 1.2rem; letter-spacing: 1px; }
-.logo span { color: #38bdf8; }
-nav a { color: #cbd5e1; text-decoration: none; margin-left: 1.5rem; font-size: 0.95rem; font-weight: 500; transition: 0.3s; }
-nav a:hover { color: #38bdf8; }
+.logo { color: #4a0e4e; font-weight: 800; font-size: 1.4rem; letter-spacing: 1px; }
+.logo span { color: #ff5e00; }
+nav a { color: #333333; text-decoration: none; margin-left: 1.5rem; font-size: 0.95rem; font-weight: 600; transition: 0.3s; }
+nav a:hover { color: #800080; }
 
-/* Hero Banner Oscuro */
+/* Hero Banner con Paleta Everon (Púrpura, Fucsia y Naranja) */
 .hero { 
-  background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%); 
+  background: linear-gradient(135deg, #4a0e4e 0%, #800080 50%, #d10068 100%); 
   color: white; 
   padding: 5rem 2rem; 
   text-align: center; 
 }
-.hero h1 { font-size: 2.5rem; margin-bottom: 1rem; }
-.hero p { font-size: 1.15rem; color: #94a3b8; max-width: 700px; margin: 0 auto 2rem auto; }
+.hero h1 { font-size: 2.8rem; margin-bottom: 1rem; font-weight: 800; }
+.hero p { font-size: 1.2rem; color: #f8f9fa; max-width: 700px; margin: 0 auto 2rem auto; }
 
-/* Botones */
+/* Botón Estilo Naranja Gradiente */
 .btn-primary { 
-  background-color: #0284c7; 
+  background: linear-gradient(90deg, #ff5e00 0%, #ffa600 100%); 
   color: white; 
   padding: 0.8rem 1.8rem; 
-  border-radius: 6px; 
+  border-radius: 25px; 
   text-decoration: none; 
-  font-weight: 600; 
+  font-weight: 700; 
   display: inline-block; 
   transition: 0.3s;
   border: none;
-  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(255, 94, 0, 0.3);
 }
-.btn-primary:hover { background-color: #0369a1; }
+.btn-primary:hover { transform: scale(1.05); }
 
 .btn-secondary {
-  background-color: #28a745;
+  background-color: transparent;
   color: white;
-  padding: 0.8rem 1.8rem;
-  border-radius: 6px;
+  border: 2px solid #ffffff;
+  padding: 0.75rem 1.8rem;
+  border-radius: 25px;
   text-decoration: none;
-  font-weight: 600;
+  font-weight: 700;
   display: inline-block;
   margin-left: 10px;
   transition: 0.3s;
 }
-.btn-secondary:hover { background-color: #218838; }
+.btn-secondary:hover { background-color: #ffffff; color: #800080; }
 
 /* Secciones generales */
 .section { padding: 4rem 2rem; max-width: 1100px; margin: 0 auto; }
-.section-title { text-align: center; font-size: 1.8rem; margin-bottom: 2.5rem; color: #0f172a; }
+.section-title { text-align: center; font-size: 2rem; margin-bottom: 2.5rem; color: #4a0e4e; font-weight: 800; }
 
-/* Cuadrículas y Tarjetas con elevación Hover */
+/* Cuadrículas y Tarjetas con bordes Púrpura/Fucsia */
 .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1.8rem; }
 .card { 
   background: white; 
-  border: 1px solid #e2e8f0; 
-  border-radius: 10px; 
+  border: 2px solid #f0e6f2; 
+  border-radius: 16px; 
   padding: 2rem; 
-  box-shadow: 0 4px 6px -1px rgba(0,0,0,0.05); 
+  box-shadow: 0 4px 15px rgba(128, 0, 128, 0.05); 
   transition: transform 0.3s, box-shadow 0.3s; 
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
-.card:hover { transform: translateY(-5px); box-shadow: 0 10px 15px -3px rgba(0,0,0,0.1); }
-.card h3 { color: #0f172a; margin-bottom: 0.8rem; }
-.card p { color: #64748b; font-size: 0.95rem; margin-bottom: 1.2rem; }
+.card:hover { transform: translateY(-5px); border-color: #d10068; box-shadow: 0 10px 20px rgba(209, 0, 104, 0.15); }
+.card h3 { color: #4a0e4e; margin-bottom: 0.8rem; font-size: 1.25rem; }
+.card p { color: #666666; font-size: 0.95rem; margin-bottom: 1.2rem; }
 
 /* Pie de página */
-footer { background: #0f172a; color: #64748b; text-align: center; padding: 2.5rem; font-size: 0.9rem; margin-top: 3rem; }
-footer a { color: #38bdf8; text-decoration: none; }
+footer { background: #4a0e4e; color: #ffffff; text-align: center; padding: 2.5rem; font-size: 0.9rem; margin-top: 3rem; }
+footer a { color: #ffa600; text-decoration: none; font-weight: bold; }
 </style>
 </head>
 
@@ -114,7 +115,7 @@ footer a { color: #38bdf8; text-decoration: none; }
 
   <section class="section" id="sobre-mi">
     <h2 class="section-title">Sobre Mí</h2>
-    <p style="text-align: center; max-width: 800px; margin: 0 auto; color: #475569; font-size: 1.05rem;">
+    <p style="text-align: center; max-width: 800px; margin: 0 auto; color: #555555; font-size: 1.05rem;">
       Estudiante de Programación en la UTN y especialista en soporte operativo y logística. Ayudo a empresas y profesionales a organizar sus operaciones, gestionar bases de datos de inventario y optimizar flujos de trabajo mediante herramientas digitales como Excel, Google Workspace, Python y sistemas CRM.
     </p>
   </section>
@@ -152,7 +153,7 @@ footer a { color: #38bdf8; text-decoration: none; }
           <h3>Gestión de Datos & Reportes Administrativos</h3>
           <p>Modelado de datos operativos y plantillas automatizadas para el control de caja chica, facturación y reportes de gestión.</p>
         </div>
-        <a href="https://github.com/nela2994" target="_blank" class="btn-primary" style="background-color: #475569; text-align: center; margin-top: 15px;">Ver Perfil GitHub →</a>
+        <a href="https://github.com/nela2994" target="_blank" class="btn-primary" style="background: linear-gradient(90deg, #800080 0%, #d10068 100%); text-align: center; margin-top: 15px;">Ver Perfil GitHub →</a>
       </div>
     </div>
   </section>
@@ -164,8 +165,6 @@ footer a { color: #38bdf8; text-decoration: none; }
 
 </body>
 </html>
-
-
 
 
 
